@@ -20,6 +20,8 @@ public class Prestec implements Serializable {
     @ManyToOne
     @JoinColumn(name = "exemplar_id")
     private Exemplar exemplar;
+    @ManyToOne
+    @JoinColumn(name = "persona_id")
     private Persona persona;
 
     private LocalDate dataPrestec;
